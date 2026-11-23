@@ -1,0 +1,6 @@
+{
+  "name": "VALENCE — Precision Hermetic Vaults",
+  "description": "Futuristic luxury hermetic preservation capsules with interactive 3D inspection, PVD finishes, and full Progressive Web App support.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

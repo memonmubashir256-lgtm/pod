@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#050505" />
+    <title>Offline — VALENCE</title>
+    <style>
+      :root {
+        color-scheme: dark;
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        background:
+          radial-gradient(circle at 20% 20%, rgba(180, 76, 255, 0.16), transparent 45%),
+          radial-gradient(circle at 80% 80%, rgba(81, 244, 232, 0.14), transparent 45%),
+          #050505;
+        color: #ffffff;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        padding: 24px;
+      }
+      .card {
+        width: 100%;
+        max-width: 440px;
+        background: rgba(16, 16, 20, 0.88);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 20px;
+        padding: 36px 32px;
+        text-align: center;
+        box-shadow: 0 24px 64px rgba(0, 0, 0, 0.65);
+      }
+      .mark {
+        width: 56px;
+        height: 56px;
+        margin: 0 auto 20px;
+        border-radius: 16px;
+        border: 1px solid rgba(81, 244, 232, 0.4);
+        display: grid;
+        place-items: center;
+        background: linear-gradient(135deg, rgba(180, 76, 255, 0.2), rgba(81, 244, 232, 0.12));
+        font-weight: 700;
+        letter-spacing: 0.12em;
+      }
+      h1 {
+        font-size: 24px;
+        font-weight: 600;
+        letter-spacing: -0.02em;
+        margin-bottom: 12px;
+      }
+      p {
+        color: rgba(255, 255, 255, 0.72);
+        font-size: 15px;
+        line-height: 1.6;
+        margin-bottom: 28px;
+      }
+      button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 13px 24px;
+        border-radius: 12px;
+        border: 1px solid rgba(81, 244, 232, 0.45);
+        background: linear-gradient(135deg, #426bff, #b44cff);
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 600;
+        cursor: pointer;
+      }
+      button:hover {
+        filter: brightness(1.08);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="card">
+      <div class="mark">V</div>
+      <h1>You are currently offline</h1>
+      <p>
+        VALENCE cannot reach the network right now. Cached showcase assets remain available once
+        your connection returns.
+      </p>
+      <button type="button" onclick="window.location.reload()">Retry Connection</button>
+    </main>
+  </body>
+</html>
